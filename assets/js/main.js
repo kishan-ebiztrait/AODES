@@ -5,6 +5,22 @@ jQuery( document ).ready(function() {
     
   });
   
+  var temp_title_height = 0;
+  jQuery(".brator-product-single-item-mini").find(".brator-product-single-item-title").each(function(){
+    if(jQuery(this).height() > temp_title_height ){
+      temp_title_height = jQuery(this).height();
+    }
+  })
+  jQuery(".brator-product-single-item-mini").find(".brator-product-single-item-title").height(temp_title_height+"px");
+  
+  var temp_price_height = 0;
+  jQuery(".brator-product-single-item-mini").find(".brator-product-single-item-price").each(function(){
+    if(jQuery(this).height() > temp_price_height ){
+      temp_price_height = jQuery(this).height();
+    }
+  })
+  jQuery(".brator-product-single-item-mini").find(".brator-product-single-item-price").height(temp_price_height+"px");
+
   jQuery(".brator-inline-product-filter-left").appendTo(".brator-inline-product-filter-right");
   var count_html = jQuery(".brator-inline-product-filter-right").find(".woocommerce-result-count").html();
   jQuery(".brator-inline-product-filter-right").find(".woocommerce-result-count").html("Showing " + count_html);
