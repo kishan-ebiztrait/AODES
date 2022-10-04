@@ -30,6 +30,7 @@ jQuery( document ).ready(function() {
   jQuery(brator_custome_html).insertAfter(".products");
   jQuery("#advanced-searchform").insertBefore(".brator-sidebar-area");
   jQuery(".brator-breadcrumb-area ").prependTo(".product-detail-page-right");
+  jQuery(".woocommerce-ordering").find("select").addClass("select2");
   jQuery(".product-detail-page-right").find(".container-xxxl").removeClass("container-xxxl");
   jQuery(".product-detail-page-right").find(".container-xxl").removeClass("container-xxl");
   jQuery(".product-detail-page-right").find(".variations").find("select").addClass("select2");
