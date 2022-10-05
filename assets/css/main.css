@@ -2502,10 +2502,7 @@ iframe{
         display: block;
         padding: 20px;
     }
-    .brator-cart-item-list.mini-cart-open .brator-cart-total-money {
-       
-        margin-bottom: 40px;
-    }
+    
     .woocommerce .brator-inline-product-filter-area .brator-inline-product-filter-right .brator-filter-short-by,
     .woocommerce .brator-inline-product-filter-area .brator-inline-product-filter-left
     {
@@ -3024,6 +3021,10 @@ iframe{
 @media screen and (max-width:767px) {
     .login-section .login_title{
         font-size: 31px;
+    }
+    .brator-cart-item-list.mini-cart-open .brator-cart-total-money {
+       
+        margin-bottom: 40px;
     }
     .woocommerce-shop #main,
     .single-product #main
