@@ -23,7 +23,10 @@
 }
 
 
+:root {
+    --color-high-dark: #ed3333;
 
+}
 @font-face {
     font-family: 'Montserrat';
     src: url('../fonts/Montserrat-Medium.eot');
@@ -268,7 +271,188 @@ input[type="search"], input[type="text"], input[type="number"], input[type="emai
 .single-product.woocommerce div.product .brator-product-img-tab-list.js-tabs#tabs-product-img.design-two div.images.woocommerce-product-gallery{
     display: unset !important;
 }
+.brator-cart-item-list.mini-cart-open .brator-cart-item-list-item-title-accetion > p,
+ .brator-cart-item-list.mini-cart-open .brator-cart-item-list-item-title-accetion .brator-cart-item-list-item-title-accetion-part a:first-child,
+ .brator-cart-item-list.mini-cart-open .brator-cart-item-list-header h2{
+    display: none;
+}
+.brator-cart-item-list.mini-cart-open .single-item{
+    position: relative;
+    padding-left: 55px;
+}
+.brator-cart-item-list.mini-cart-open .brator-cart-item-list-header {
+    position: absolute !important;
+    top: 3px;
+    right: 14px;
+}
+    
 
+.brator-cart-item-list.mini-cart-open .brator-cart-item-list-item-title-accetion .brator-cart-item-list-item-title-accetion-part{
+    position: absolute;
+    left: 17px;
+    top: 35%;
+}
+.brator-cart-item-list.mini-cart-open .brator-cart-item-list-item-title-accetion .brator-cart-item-list-item-title-accetion-part a:last-child svg{
+    color: #fff !important;
+}
+.brator-cart-item-list.mini-cart-open .brator-cart-item-list-item-title-accetion .brator-cart-item-list-item-title-accetion-part a:last-child,
+.brator-cart-item-list.mini-cart-open .brator-cart-item-list-item-title-accetion .brator-cart-item-list-item-title-accetion-part a:hover {
+    background: #ed3333 !important;
+}
+.brator-header-area.header-one .brator-info-right a{
+    background: #000;
+    color: #fff !important;
+    padding: 10px 10px;
+}
+.brator-header-area.header-one .brator-info-right a.login{
+    padding: 10px 15px;
+}
+.brator-cart-item-list .brator-cart-total-money .brator-cart-total-action a{
+    font-weight: 400;
+    font-size: 22px;
+    height: unset;
+    line-height: 30px;
+}
+.brator-header-area.header-one .brator-info-right .brator-cart-item-list-item-img a,
+.brator-header-area.header-one .brator-info-right .brator-cart-item-list-item-title-one a{
+    background: #0f1423;
+}
+.brator-cart-item-list.mini-cart-open {
+    right: 20px !important;
+}
+.brator-header-area.header-three.header-one .brator-info-right .brator-cart-link{
+    opacity: 0;
+}
+.brator-header-area.header-one .brator-info-right .header-cart-total{
+    float: left;
+    color: #fff;
+    margin-right: 10px;
+}
+.brator-header-area.header-one .brator-info-right .click-item-count{
+    float: left;
+}
+.brator-header-area.header-one .brator-info-right  .click-item-count svg{
+    fill: #fff;
+}
+.brator-cart-item-list .brator-cart-total-money .brator-cart-total-action a{
+    background: #ed3333;
+    border: 2px solid #ed3333;
+}
+.button-fill-one, .woocommerce .brator-product-single-frequently-total button, .brator-product-header-layout-area.desing-two .brator-product-add-to-cart .brator-product-add-to-cart-button-added button, .brator-product-hero-content .brator-product-hero-content-add-to-cart .brator-product-single-cart-count-add .brator-product-single-cart-add button, .cart-total-area .cart-total-process a, .brator-cart-info .brator-cart-checkout .brator-cart-checkout-right .brator-cart-checkout-back button, .brator-cart-info .brator-cart-checkout .brator-cart-checkout-left .brator-cart-checkout-fields button, .brator-filter-item-content-area .brator-rang-item-input .brator-rang-item-input-single-btn button.ac-trigger, .brator-current-vehicle .brator-current-vehicle-content a, .brator-parts-search-box-form button, .brator-banner-area.design-two .brator-banner-content .brator-banner-content-action a, .brator-parts-search-box-area.design-one .brator-parts-search-box-form button, .product-list-items.type-list .brator-product-single-item-area.design-three .brator-product-single-item-area-right .brator-product-single-item-btn .brator-product-single-item-btn-cart .button, .brator-product-single-item-area .brator-product-single-item-mini .brator-product-single-item-btn a.add_to_cart_button, .brator-offer-box-two a, .brator-offer-box-one a, .brator-coming-soon-area .brator-coming-soon-subs-area .brator-sub-form .news-letter-form button.wpcf7-form-control.wpcf7-submit, .brator-newsletter-form.design-one .news-letter-form button, .brator-newsletter-box .brator-newsletter-box-content button.wpcf7-submit, .brator-contact-form-fields .brator-contact-form-field button, .brator-footer-top-element .brator-sub-form button, .brator-cart-item-list .brator-cart-total-money .brator-cart-total-action a{
+    background: #ed3333 ;
+    border: 2px solid var(--color-high-dark);
+}
+.brator-cart-item-list .brator-cart-total-money .brator-cart-total-action a:first-child{
+    background: #8b8b8b;
+    border-color: #8b8b8b;
+}
+.brator-cart-item-list .brator-cart-total-money .brator-cart-total-action a.wc-forward svg{
+    fill: #fff !important;
+    fill: #fff !important;
+    margin-right: 5px;
+    font-size: 29px;
+}
+.brator-cart-item-list .brator-cart-item-list-item .brator-cart-item-list-item-title .brator-cart-item-list-item-title-one .price-pdo h6,
+.brator-cart-item-list .brator-cart-total-money .brator-cart-total-header strong,
+.brator-cart-item-list .brator-cart-total-money .brator-cart-total-header *{
+    font-weight: 400;
+}
+.brator-cart-item-list .brator-cart-item-list-item .brator-cart-item-list-item-title .brator-cart-item-list-item-title-one .price-pdo h6{
+    font-size: 14px;
+}
+
+.brator-cart-item-list .brator-cart-item-list-item .brator-cart-item-list-item-title .brator-cart-item-list-item-title-accetion .brator-cart-item-list-item-title-accetion-part .cart-item-close svg{
+    /* top: 0px;
+    margin-left: 0px;
+    padding-top: 40px; */
+    left: -16px;
+    top: -11px;
+}
+.brator-cart-item-list .brator-cart-item-list-item .brator-cart-item-list-item-title .brator-cart-item-list-item-title-one .price .amount * {
+    color: #ed3333 !important;
+}
+.brator-cart-item-list .brator-cart-item-list-item .brator-cart-item-list-item-title .brator-cart-item-list-item-title-one a {
+    padding-top: 10px;
+}
+.brator-cart-item-list.mini-cart-open {
+    background: #0f1423;
+    padding: 35px 0px;
+}
+.brator-cart-item-list{
+    border: unset;
+}
+.brator-cart-item-list .brator-cart-item-list-item .brator-cart-item-list-item-title .brator-cart-item-list-item-title-one .price-pdo{
+    height: 55px;
+    margin-right: 20px;
+}
+.brator-cart-item-list.mini-cart-open ul.woocommerce-mini-cart.cart_list.product_list_widget{
+    max-height: 592px;
+    overflow-y: auto;
+}
+.brator-cart-item-list.mini-cart-open .brator-cart-total-money {
+    margin: 0px 20px;
+}
+.brator-cart-item-list.mini-cart-open ul.product_list_widget li {
+    margin-bottom: 0px;
+}
+.brator-header-area.header-one .brator-info-right .brator-cart-item-list-item-img a{
+    padding: 0px;
+}
+.brator-header-area.header-one .brator-info-right .brator-cart-item-list-item-img img{
+    border-radius: 10px;
+}
+.brator-cart-item-list.mini-cart-open ul.woocommerce-mini-cart.cart_list.product_list_widget::-webkit-scrollbar-track,.force-overflow::-webkit-scrollbar-track {
+
+    border-radius: 10px;
+
+    background-color: #4a4756;
+
+}
+
+
+
+.brator-cart-item-list.mini-cart-open ul.woocommerce-mini-cart.cart_list.product_list_widget::-webkit-scrollbar,.force-overflow::-webkit-scrollbar {
+
+    width: 4px;
+    border-radius: 10px;
+    background-color: #d8d8d8;
+
+}
+
+
+
+.brator-cart-item-list.mini-cart-open ul.woocommerce-mini-cart.cart_list.product_list_widget::-webkit-scrollbar-thumb,.force-overflow::-webkit-scrollbar-thumb {
+
+    border-radius: 10px;
+
+    background-color: #d8d8d8;
+
+}
+.brator-cart-item-list.mini-cart-open * {
+    color: #fff !important;
+}
+.brator-cart-item-list.mini-cart-open .brator-cart-item-list-item{
+    border-bottom:unset !important;
+        padding-bottom:unset !important;
+    margin-bottom: unset !important;
+}
+.brator-cart-item-list .brator-cart-item-list-item .brator-cart-item-list-item-title .brator-cart-item-list-item-title-accetion .brator-cart-item-list-item-title-accetion-part a svg,
+.brator-cart-item-list .brator-cart-item-list-item .brator-cart-item-list-item-title .brator-cart-item-list-item-title-accetion .brator-cart-item-list-item-title-accetion-part a svg{
+    fill: #000 !important;
+}
+.brator-cart-item-list .brator-cart-total-money .brator-cart-total-header{
+    padding: 15px 0px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+.brator-cart-item-list.mini-cart-open .brator-cart-item-list-item-title-accetion .brator-cart-item-list-item-title-accetion-part a:last-child{
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+.brator-cart-item-list .brator-cart-item-list-item .brator-cart-item-list-item-title .brator-cart-item-list-item-title-one{
+    align-items: end;
+}
 .brator-product-single-tab-list .brator-product-single-tab-header ul li .js-tabs__title-active{
     background-color: var(--color-high-dark);
     color: #fff;
@@ -1146,7 +1330,7 @@ form#advanced-searchform{
     margin-right: 27px;
     color: #000;
 }
-.brator-breadcrumb-area .container {
+.brator-inline-product-filter-area .brator-breadcrumb-area .container {
     max-width: 100%;
     padding: 0px;
 }
@@ -1721,7 +1905,7 @@ iframe{
     }
 
     .login {
-        font-size: 12px;
+        font-size: 13px;
         padding: 12px 25px;
     }
 
@@ -2990,7 +3174,25 @@ iframe{
     }
 }
 @media screen and (max-width:480px) {
+    .brator-cart-item-list-item .brator-cart-item-list-item-title .brator-cart-item-list-item-title-one a {
+        max-width: 65%;
+       
+    }
+    .brator-cart-item-list .brator-cart-item-list-item .brator-cart-item-list-item-title .brator-cart-item-list-item-title-one a {
+    
+        padding: 0px 4px;
+    }
+    .brator-cart-item-list .brator-cart-item-list-item .brator-cart-item-list-item-title .brator-cart-item-list-item-title-one .price-pdo {
+        width: 34%;
+    }
+    .brator-cart-item-list .brator-cart-item-list-item .brator-cart-item-list-item-img{
+        max-width: 70px;
+        padding-right: 8px;
 
+    }
+    .brator-cart-item-list .brator-cart-item-list-item .brator-cart-item-list-item-title .brator-cart-item-list-item-title-one .price-pdo h6 {
+        font-size: 12px;
+    }
     .hero-title-text h1 {
         font-size: 25px;
     }

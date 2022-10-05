@@ -5,7 +5,7 @@ $blog_subheading = brator_get_options( 'blog_subheading' );
 ?>
 <?php if ( function_exists( 'bcn_display' ) ) { ?>
 <section class="brator-breadcrumb-area">
-    <div class="">
+    <div class="container-xxxl container-xxl container">
         <div class="row">
           <div class="col-lg-12">
             <div class="brator-breadcrumb">

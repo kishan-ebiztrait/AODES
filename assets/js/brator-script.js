@@ -264,7 +264,7 @@
     cart start
     */
     if ($('.brator-cart-link').length) {
-        $('.brator-cart-link a').on('click', function(e) {
+        $('.brator-header-area.header-one .brator-info-right a').on('click', function(e) {
             $('.brator-cart-item-list').toggleClass('mini-cart-open');
         });
     }

@@ -95,13 +95,19 @@ $header_search_placeholder = brator_get_options( 'header_search_placeholder' );
 					</div>
 				</a> -->
 				<div class="login-buton">
-					<a href="<?php echo site_url();?>/my-account/" class="login">Dealer Login</a>
+					<a href="<?php echo site_url();?>/my-account/" class="login">
+					<?php if(is_user_logged_in()){?>
+					MY ACCOUNT
+					<?php }else{?>
+						Dealer Login
+						<?php }?>
+				</a>
 				</div>
 			</div>
 			<?php } ?>
 			<?php if ( $header_cart == '1' ) { ?>
 			<div class="brator-cart-link">
-				<a href="<?php echo esc_js( 'javascript:void(0)' ); ?>">
+				<a href="<?php echo esc_js( 'javascript:void(0)' ); ?>" class="login">
 				</div><b class="header-cart-total"><?php echo WC()->cart->get_cart_subtotal(); ?></b>
 					<div class="brator-cart-icon click-item-count">
 						<svg fill="#000000" width="52" height="52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64">

@@ -184,7 +184,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 	<?php do_action( 'woocommerce_after_cart_table' ); ?>
 </form>
 </div>
-<?php do_action( 'woocommerce_before_cart_collaterals' ); ?>
+
 </div>
 
 <div class="col-xl-4 col-lg-5 col-md-7 col-12">
