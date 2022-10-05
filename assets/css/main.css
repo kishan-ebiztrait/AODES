@@ -131,6 +131,16 @@ body {
 .select2-container .select2-selection--single{
     height: 45px;
 }
+input[type="search"], input[type="text"], input[type="number"], input[type="email"] {
+    background: var(--color-white);
+    padding: 13px;
+    border: 1px solid black;
+    width: 100%;
+    min-width: 200px;
+    max-width: 325px;
+    line-height: 0px;
+}
+
 .login-section a {
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
