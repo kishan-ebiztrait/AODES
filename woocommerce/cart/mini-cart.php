@@ -48,10 +48,14 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 					<div class="brator-cart-item-list-item-title">
 						<div class="brator-cart-item-list-item-title-one">
 							<a href="<?php echo esc_url( $product_permalink ); ?>">
-							<h2><?php echo sprintf( __( '%s', 'brator' ), $product_name ); ?></h2></a>
+								<h2><?php echo sprintf( __( '%s', 'brator' ), $product_name ); ?> <br><span class="price"><?php echo $product_price;?></span></h2>
+								
+							</a>
+							
 							<div class="price-pdo">
 							<h6>
-								<?php echo apply_filters( 'woocommerce_widget_cart_item_quantity', '<span class="quantity">' . sprintf( '%s &times; %s', $cart_item['quantity'], $product_price ) . '</span>', $cart_item, $cart_item_key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+								Quantity: <?php echo $cart_item['quantity'];?>
+								<?php //echo apply_filters( 'woocommerce_widget_cart_item_quantity', '<span class="quantity">' . sprintf( '%s &times; %s', $cart_item['quantity'], $product_price ) . '</span>', $cart_item, $cart_item_key ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
 							</h6>
 							</div>
 						</div>
@@ -115,7 +119,10 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 
 		<div class="woocommerce-mini-cart__buttons brator-cart-total-action">
 			<?php
-				echo '<a href="' . esc_url( wc_get_cart_url() ) . '" class="button wc-forward">' . esc_html__( 'View cart', 'brator' ) . '</a>';
+				echo '<a href="' . esc_url( wc_get_cart_url() ) . '" class="button wc-forward"><svg fill="#000000" width="52" height="52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64">
+					<g><path d="M40.9,48.2c-3.9,0-7.1,3.3-7.1,7.3c0,4,3.2,7.3,7.1,7.3s7.1-3.3,7.1-7.3C48.1,51.5,44.9,48.2,40.9,48.2z M40.9,59.3c-2,0-3.6-1.7-3.6-3.8c0-2.1,1.6-3.8,3.6-3.8s3.6,1.7,3.6,3.8C44.6,57.6,42.9,59.3,40.9,59.3z"></path><path d="M18.2,48.2c-3.9,0-7.1,3.3-7.1,7.3c0,4,3.2,7.3,7.1,7.3s7.1-3.3,7.1-7.3C25.4,51.5,22.2,48.2,18.2,48.2z M18.2,59.3c-2,0-3.6-1.7-3.6-3.8c0-2.1,1.6-3.8,3.6-3.8s3.6,1.7,3.6,3.8C21.9,57.6,20.2,59.3,18.2,59.3z"></path><path d="M57.8,1.3h-6.4c-1.5,0-2.8,1.1-3,2.6l-1.8,13.2H7.3c-0.9,0-1.7,0.4-2.2,1.1c-0.5,0.7-0.7,1.6-0.5,2.4c0,0,0,0.1,0,0.1l6.1,18.9c0.3,1.2,1.4,2.1,2.8,2.1h29.5c2.2,0,4-1.6,4.3-3.8l4.6-33.2h6c1,0,1.8-0.8,1.8-1.8S58.8,1.3,57.8,1.3z M43.7,37.4 c-0.1,0.4-0.4,0.8-0.9,0.8h-29L8.1,20.6h37.9L43.7,37.4z"></path>
+					</g>
+					</svg>' . esc_html__( 'View cart', 'brator' ) . '</a>';
 				echo '<a href="' . esc_url( wc_get_checkout_url() ) . '" class="button checkout wc-forward">' . esc_html__( 'Checkout', 'brator' ) . '</a>';
 			?>
 		</div>

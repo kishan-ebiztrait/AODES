@@ -118,7 +118,9 @@ body {
     color: #5d5d5d;
     border: 1px solid #5d5d5d;
 }
-
+.woocommerce-ordering .select2-container{
+    width: 200px!important;
+}
 .select2-dropdown.select2-dropdown--below{
     top:-13px;
 }
@@ -180,6 +182,10 @@ body {
     }
   .brator-current-vehicle-area .brator-current-vehicle{
     margin-bottom: 35px;
+  }
+  
+  .single-product .woocommerce-custom-single-cart-form .tinv-wishlist{
+    display: none;
   }
   
   .login-section .half .contents, .login-section .half .bg {
@@ -358,9 +364,8 @@ body {
 .single-product .brator-product-single-tab-list .brator-product-single-tab-header ul{
     border-bottom: 0px !important;
 }
-.single-product .brator-product-single-item-area .brator-product-single-item-mini .brator-product-single-item-title h5{
-    min-height: 51px;
-}
+
+
 .single-product .splide__arrows.style-two .splide__arrow--prev,
 .single-product .splide__arrows.style-two .splide__arrow--next{
     display: none;
@@ -1993,9 +1998,17 @@ iframe{
         width: 100%;
     }
 }
+@media screen and (max-width:1440px) {
+    .woocommerce-shop .brator-inline-product-filter-area {
+        margin-top: 25px;
+    }
+}
 @media screen and (max-width:1200px) {
     .main-nav li {
         margin-right: 20px;
+    }
+    .brator-product-header-layout-area .brator-product-header-layout{
+        padding: 13px;
     }
     .product_detail_wrap .product_title{
         font-size: 13px;
@@ -2252,7 +2265,37 @@ iframe{
         width: 33.33%;
     }
 }
-
+@media screen and (max-width:1080px) {
+    .single-product .product-detail-sidebar {
+        width: 100%;
+        float: unset;
+    }
+    .product-detail-page-right {
+        width: 100%;
+        float: unset;
+        padding-left: 0px;
+        padding-top: 50px;
+    }
+    
+    .single-product .brator-product-img-tab-list.js-tabs#tabs-product-img {
+        padding-right: 0px;
+    }
+    .single-product .brator-product-single-tab-area+.brator-deal-product-slider {
+        padding-bottom: 0px;
+    }
+    .single-product.woocommerce .brator-product-single-tab-list .brator-product-single-tab-header ul{
+        display: block;
+    }
+    .single-product.woocommerce .brator-product-single-tab-list .brator-product-single-tab-header ul li{ 
+        display: inline-block;
+    }
+    .brator-product-single-tab-area.design-one-m .brator-product-single-tab-list .brator-product-single-tab-header ul li{
+        width: unset !important;
+    }
+    .brator-product-single-tab-area.design-one-m .brator-product-single-tab-list .brator-product-single-tab-header ul li a{
+        padding: 10px 20px;
+    }
+}
 @media screen and (max-width:1024px) {
     .login-section .login_title {
         margin-bottom: 30px;
@@ -2940,6 +2983,17 @@ iframe{
 
     .hero-title-text h1 {
         font-size: 25px;
+    }
+    .brator-cart-item-list .brator-cart-item-list-item .brator-cart-item-list-item-title .brator-cart-item-list-item-title-one .price-pdo{
+        height: 26px;
+    margin-right: 11px;
+    margin-top: 0px;
+    }
+    .brator-cart-item-list {
+        padding: 4px;
+    }
+    .brator-cart-item-list .brator-cart-item-list-item .brator-cart-item-list-item-title .brator-cart-item-list-item-title-accetion{
+        margin-top: 0px;
     }
     .product_detail_wrap .row.products_list .product_item{
         width: 50%;
