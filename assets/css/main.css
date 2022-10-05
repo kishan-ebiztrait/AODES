@@ -3220,3 +3220,14 @@ iframe{
         padding-left: 0px;
     }
 }
+@media screen and (max-width:400px) {
+.brator-cart-item-list .brator-cart-total-money .brator-cart-total-action{
+    display: block;
+}
+.brator-cart-item-list .brator-cart-total-money .brator-cart-total-action a:first-child{
+    margin-bottom: 10px;
+}
+.brator-cart-item-list .brator-cart-total-money .brator-cart-total-action a:last-child {
+    margin-bottom: 42px;
+}
+}
