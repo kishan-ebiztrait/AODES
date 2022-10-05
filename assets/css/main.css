@@ -2502,6 +2502,10 @@ iframe{
         display: block;
         padding: 20px;
     }
+    .brator-cart-item-list.mini-cart-open .brator-cart-total-money {
+       
+        margin-bottom: 40px;
+    }
     .woocommerce .brator-inline-product-filter-area .brator-inline-product-filter-right .brator-filter-short-by,
     .woocommerce .brator-inline-product-filter-area .brator-inline-product-filter-left
     {
