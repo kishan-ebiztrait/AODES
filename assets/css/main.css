@@ -707,9 +707,6 @@ input[type="search"], input[type="text"], input[type="number"], input[type="emai
   
 }
 
-.woocommerce-shop .products.columns-4{
-    padding: 45px 0px;
-}
 .woocommerce-shop .brator-product-single-item-area{
     padding: 0px;
 }
@@ -991,6 +988,7 @@ text-align: right;
 }
 .products.columns-4{
     clear: both;
+    padding: 45px 0px;
 }
 .woocommerce .breadcrumb {
     border-bottom: 2px solid;
