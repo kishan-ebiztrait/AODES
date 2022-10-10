@@ -15,7 +15,10 @@ get_header(); ?>
    <!-------hero-starts-here-------->
    <section class="hero">
    <?php $banner_image = get_field( "banner_image"); $banner_bottom_image = get_field( "banner_bottom_image"); $banner_title = get_field( "banner_title");  ?>
-    <img src="<?php echo $banner_image;?>" alt="image" class="img-fluid">
+   <video autoplay muted loop id="myVideo" class="w-100">
+        <source src="<?php echo get_template_directory_uri();?>/assets/video/banner.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
     <div class="hero-content">
       <a href="#" class="find-deal">
         FIND A Dealer
