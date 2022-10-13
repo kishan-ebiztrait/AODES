@@ -16,7 +16,7 @@ get_header(); ?>
    <section class="hero">
    <?php $banner_image = get_field( "banner_image"); $banner_bottom_image = get_field( "banner_bottom_image"); $banner_title = get_field( "banner_title");  ?>
    <video autoplay muted loop id="myVideo" class="w-100">
-        <source src="<?php echo get_template_directory_uri();?>/assets/video/banner.mp4" type="video/mp4">
+        <source src="<?php echo get_field('background_video');?>" type="video/mp4">
         Your browser does not support HTML5 video.
       </video>
     <div class="hero-content">

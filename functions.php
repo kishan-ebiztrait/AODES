@@ -110,30 +110,30 @@ function custom_post_type() {
         // Registering your Custom Post Type
         register_post_type( 'catalogs', $args );
 
-// 		$labels = array(
-// 			'name' => 'Categories'  ,
-// 			'singular_name' => 'Category',
-// 			'search_items' =>  __( 'Search Categories' ),
-// 			'all_items' => __( 'All Categories' ),
-// 			'parent_item' => __( 'Parent Category' ),
-// 			'parent_item_colon' => __( 'Parent Category:' ),
-// 			'edit_item' => __( 'Edit Category' ), 
-// 			'update_item' => __( 'Update Category' ),
-// 			'add_new_item' => __( 'Add New Category' ),
-// 			'new_item_name' => __( 'New Category Name' ),
-// 			'menu_name' => __( 'Categories' ),
-// 		  );    
+		$labels = array(
+			'name' => 'Categories'  ,
+			'singular_name' => 'Category',
+			'search_items' =>  __( 'Search Categories' ),
+			'all_items' => __( 'All Categories' ),
+			'parent_item' => __( 'Parent Category' ),
+			'parent_item_colon' => __( 'Parent Category:' ),
+			'edit_item' => __( 'Edit Category' ), 
+			'update_item' => __( 'Update Category' ),
+			'add_new_item' => __( 'Add New Category' ),
+			'new_item_name' => __( 'New Category Name' ),
+			'menu_name' => __( 'Categories' ),
+		  );    
 		 
-// 		// Now register the taxonomy
-// 		  register_taxonomy('catalogs_categories',array('catalogs'), array(
-// 			'hierarchical' => true,
-// 			'labels' => $labels,
-// 			'show_ui' => true,
-// 			'show_in_rest' => true,
-// 			'show_admin_column' => true,
-// 			'query_var' => true,
-// 			'rewrite' => array( 'slug' => 'category' ),
-// 		  ));
+		// Now register the taxonomy
+		  register_taxonomy('catalogs_categories',array('catalogs'), array(
+			'hierarchical' => true,
+			'labels' => $labels,
+			'show_ui' => true,
+			'show_in_rest' => true,
+			'show_admin_column' => true,
+			'query_var' => true,
+			'rewrite' => array( 'slug' => 'catalog-categories' ),
+		  ));
 
       
     }
