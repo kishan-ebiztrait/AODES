@@ -46,6 +46,14 @@ if ( post_password_required() ) {
 	.tinv-wraper.woocommerce.tinv-wishlist.tinvwl-shortcode-add-to-cart {
 		display: none;
 	}
+	
+	.bundle-side-cart {
+		display: flex;
+		align-items: center;
+	}
+	.bundle-side-cart h4.bundled_product_title.product_title {
+		font-size: 14px;
+	}
 </style>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 	<div class="custome-product-detial-page-structre container-xxxl container-xxl container"> 

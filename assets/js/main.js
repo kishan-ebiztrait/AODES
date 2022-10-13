@@ -38,6 +38,12 @@ jQuery( document ).ready(function() {
   jQuery(".brator-product-single-tab-area").find(".col-xxl-8").addClass("col-xxl-12");
   jQuery(".brator-product-single-tab-area").find(".col-xxl-8").removeClass("col-xxl-8");
   jQuery("<h5>VEHICLE PARTS FILTER</h5>").prependTo("#advanced-searchform");
+  jQuery(".cart_group").find(".details").prepend("<div class='bundle-side-cart'></div>");
+  jQuery(".details").each(function(){
+    jQuery(this).find(".bundled_product_title").appendTo(jQuery(this).find(".bundle-side-cart"));
+    jQuery(this).find(".cart").appendTo(jQuery(this).find(".bundle-side-cart"));
+  })
+
   jQuery(".recently-view").find(".brator-section-header-title").html("<h2>Related Products</h2>");
   jQuery('.select2').select2();
 
