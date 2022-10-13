@@ -54,6 +54,15 @@ if ( post_password_required() ) {
 	.bundle-side-cart h4.bundled_product_title.product_title {
 		font-size: 14px;
 	}
+	.bundle-side-cart .brator-product-single-cart-count .brator-brator-cart-list-items-qty input {
+		width: 46% !important;
+		height: 35px;
+		border: 0;
+	}
+	.bundle-side-cart .brator-product-single-cart-count .brator-brator-cart-list-items-qty span {
+		width: 25px;
+		line-height: 35px;
+	}
 </style>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 	<div class="custome-product-detial-page-structre container-xxxl container-xxl container"> 
