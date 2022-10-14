@@ -255,7 +255,7 @@ get_header(); ?>
         <?php endif; ?>
         </div>
             <div class="accessories-button">
-              <a href="<?php echo site_url('/catalogs');?>" class="accessories-link">
+              <a href="<?php echo site_url('/catalog-categories/accessories/');?>" class="accessories-link">
                 explore more
               </a>
             </div>
