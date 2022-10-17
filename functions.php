@@ -582,3 +582,52 @@ function wpse_131562_redirect() {
 	}
 } 
  add_action('template_redirect', 'wpse_131562_redirect');
+
+function vehicle_init() {
+    $labels = array(
+        'name' => 'Vehicle',
+        'singular_name' => 'Vehicle',
+        'add_new' => 'Add New Vehicle',
+        'add_new_item' => 'Add New Vehicle',
+        'edit_item' => 'Edit Vehicle',
+        'new_item' => 'New Vehicle',
+        'all_items' => 'All Vehicles',
+        'view_item' => 'View Vehicles',
+        'search_items' => 'Search Vehicles',
+        'not_found' =>  'No Vehicles Found',
+        'not_found_in_trash' => 'No Vehicles found in Trash', 
+        'parent_item_colon' => '',
+        'menu_name' => 'Vehicles',
+    );
+    
+    // register post type
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'has_archive' => true,
+        'show_ui' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug' => 'vehicles'),
+        'query_var' => true,
+        'menu_icon' => 'dashicons-randomize',
+        'supports' => array(
+            'title',
+            'editor',
+            'excerpt',
+            'trackbacks',
+            'custom-fields',
+            'comments',
+            'revisions',
+            'thumbnail',
+            'author',
+            'page-attributes'
+        )
+    );
+    register_post_type( 'vehicle', $args );
+    
+    // register taxonomy
+    register_taxonomy('vehicle_category', 'vehicle', array('hierarchical' => true, 'label' => 'Category', 'query_var' => true, 'rewrite' => array( 'slug' => 'vehicle-category' )));
+    register_taxonomy('vehicle_color', 'vehicle', array('hierarchical' => true, 'label' => 'Color', 'query_var' => true, 'rewrite' => array( 'slug' => 'vehicle-color' )));
+}
+add_action( 'init', 'vehicle_init' );
