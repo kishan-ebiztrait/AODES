@@ -186,7 +186,15 @@ get_header(); ?>
           ACCESSORIES
         </h2>
         <?php $count = 1;
-            $args = array( 'post_type' => 'catalogs', 'posts_per_page' => 2,'post_status' => 'publish' ,'orderby'      => 'ID', 'order'=>'DESC');
+            $args = array( 'post_type' => 'catalogs', 'posts_per_page' => 2,
+            'post_status' => 'publish' ,'orderby'      => 'ID', 'order'=>'DESC',
+            'tax_query' => array(
+              array (
+                  'taxonomy' => 'catalogs_categories',
+                  'field' => 'slug',
+                  'terms' => 'accessories',
+              )
+          ),);
             $the_query = new WP_Query( $args );  ?>
             <?php if ( $the_query->have_posts() ) : ?>
             <?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
@@ -247,7 +255,7 @@ get_header(); ?>
         <?php endif; ?>
         </div>
             <div class="accessories-button">
-              <a href="<?php echo site_url('/catalogs');?>" class="accessories-link">
+              <a href="<?php echo site_url('/catalog-categories/accessories/');?>" class="accessories-link">
                 explore more
               </a>
             </div>

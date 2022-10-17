@@ -1,8 +1,3 @@
-<?php
-$count = get_post_meta( get_the_id(), 'views', true );
-$count = ( $count == null ? '0' : $count );
-$view  = ( $count > 1 ? esc_html__( ' Views', 'brator' ) : esc_html__( ' View', 'brator' ) );
-?>
 <div class="brator-blog-listing-single-item-area list-type-one">
 	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="type-post">
