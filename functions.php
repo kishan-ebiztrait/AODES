@@ -629,5 +629,7 @@ function vehicle_init() {
     // register taxonomy
     register_taxonomy('vehicle_category', 'vehicle', array('hierarchical' => true, 'label' => 'Category', 'query_var' => true, 'rewrite' => array( 'slug' => 'vehicle-category' )));
     register_taxonomy('vehicle_color', 'vehicle', array('hierarchical' => true, 'label' => 'Color', 'query_var' => true, 'rewrite' => array( 'slug' => 'vehicle-color' )));
+    register_taxonomy('vehicle_model', 'vehicle', array('hierarchical' => true, 'label' => 'Model', 'query_var' => true, 'rewrite' => array( 'slug' => 'vehicle-model' )));
+    register_taxonomy('vehicle_accessories', 'vehicle', array('hierarchical' => true, 'label' => 'Accessories', 'query_var' => true, 'rewrite' => array( 'slug' => 'vehicle-accessories' )));
 }
 add_action( 'init', 'vehicle_init' );
