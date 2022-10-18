@@ -513,6 +513,9 @@ input[type="search"], input[type="text"], input[type="number"], input[type="emai
     padding-top: 10px;
     text-transform: uppercase;
 }
+#asl-panel {
+    margin-bottom: 30px;
+}
 .woocommerce-variation-add-to-cart .tinv-wishlist,
 .single-product .brator-product-single-tab-area+.brator-deal-product-slider .brator-product-single-item-cat,
 .single-product .brator-product-single-tab-area+.brator-deal-product-slider  .brator-product-single-item-review{
