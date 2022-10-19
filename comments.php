@@ -75,46 +75,46 @@ if ( have_comments() ) :
 	<?php
 endif; // Check for have_comments().
 
-$is_no_post_thumb = 'comments-form-area';
-if ( ! have_comments() ) {
-	$is_no_post_thumb = 'comments-form-area no-comment';
-}
-if ( comments_open() ) :
-	$user                 = wp_get_current_user();
-	$brator_user_identity = $user->display_name;
-	$req                  = get_option( 'require_name_email' );
-	$aria_req             = $req ? " aria-required='true'" : '';
-	$formargs             = array(
-		'class_form'           => 'brator-contact-form-fields blog-post-comment-box-area',
-		'class_container'      => $is_no_post_thumb,
-		'title_reply'          => esc_html__( 'Leave a Comment', 'brator' ),
-		'title_reply_to'       => esc_html__( 'Leave a Comment to %s', 'brator' ),
-		'cancel_reply_link'    => esc_html__( 'Cancel Reply', 'brator' ),
-		'title_reply_before'   => '<div class="brator-contact-form-area blog-post-comment-header-area"><div class="brator-contact-form-header"><h2 id="reply-title" class="comment-reply-title">',
-		'title_reply_after'    => '</h2></div></div>',
-		'submit_field'         => '<div class="brator-contact-form-field submit-button">%1$s %2$s</div>',
-		'label_submit'         => esc_html__( 'Submit Comment', 'brator' ),
-		'comment_notes_before' => '',
-		'submit_button'        => '<button type="submit" name="%1$s" id="%2$s" class="%3$s">%4$s</button>',
-		'comment_field'        => '<div class="brator-contact-form-field"><textarea id="comment" name="comment" placeholder="' . esc_attr__( 'Write your comment here', 'brator' ) . '">' .
-		'</textarea></div>',
-		'must_log_in'          => '<div>' . sprintf( wp_kses( __( 'You must be <a href="%s">logged in</a> to post a comment.', 'brator' ), array( 'a' => array( 'href' => array() ) ) ), wp_login_url( apply_filters( 'the_permalink', get_permalink() ) ) ) . '</div>',
-		'logged_in_as'         => '<div class="logged-in-as">' . sprintf( wp_kses( __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="%4$s">Log out?</a>', 'brator' ), array( 'a' => array( 'href' => array() ) ) ), esc_url( admin_url( 'profile.php' ) ), $brator_user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink() ) ), esc_attr__( 'Log out of this account', 'brator' ) ) . '</div>',
-		'comment_notes_after'  => '',
-		'fields'               => apply_filters(
-			'comment_form_default_fields',
-			array(
-				'author' =>
-				'<div class="brator-contact-form-field-two-items"><div class="brator-contact-form-field">'
-				. '<input id="author"  name="author" type="text" placeholder="' . esc_attr__( 'Name', 'brator' ) . '" value="' . esc_attr( $commenter['comment_author'] ) .
-				'" size="30"' . $aria_req . ' /></div>',
-				'email'  =>
-				'<div class="brator-contact-form-field">'
-				. '<input id="email" name="email" type="text" placeholder="' . esc_attr__( 'Your Email *', 'brator' ) . '" value="' . esc_attr( $commenter['comment_author_email'] ) .
-				'" size="30"' . $aria_req . ' /></div></div>',
-			)
-		),
-	);
+// $is_no_post_thumb = 'comments-form-area';
+// if ( ! have_comments() ) {
+// 	$is_no_post_thumb = 'comments-form-area no-comment';
+// }
+// if ( comments_open() ) :
+// 	$user                 = wp_get_current_user();
+// 	$brator_user_identity = $user->display_name;
+// 	$req                  = get_option( 'require_name_email' );
+// 	$aria_req             = $req ? " aria-required='true'" : '';
+// 	$formargs             = array(
+// 		'class_form'           => 'brator-contact-form-fields blog-post-comment-box-area',
+// 		'class_container'      => $is_no_post_thumb,
+// 		'title_reply'          => esc_html__( 'Leave a Comment', 'brator' ),
+// 		'title_reply_to'       => esc_html__( 'Leave a Comment to %s', 'brator' ),
+// 		'cancel_reply_link'    => esc_html__( 'Cancel Reply', 'brator' ),
+// 		'title_reply_before'   => '<div class="brator-contact-form-area blog-post-comment-header-area"><div class="brator-contact-form-header"><h2 id="reply-title" class="comment-reply-title">',
+// 		'title_reply_after'    => '</h2></div></div>',
+// 		'submit_field'         => '<div class="brator-contact-form-field submit-button">%1$s %2$s</div>',
+// 		'label_submit'         => esc_html__( 'Submit Comment', 'brator' ),
+// 		'comment_notes_before' => '',
+// 		'submit_button'        => '<button type="submit" name="%1$s" id="%2$s" class="%3$s">%4$s</button>',
+// 		'comment_field'        => '<div class="brator-contact-form-field"><textarea id="comment" name="comment" placeholder="' . esc_attr__( 'Write your comment here', 'brator' ) . '">' .
+// 		'</textarea></div>',
+// 		'must_log_in'          => '<div>' . sprintf( wp_kses( __( 'You must be <a href="%s">logged in</a> to post a comment.', 'brator' ), array( 'a' => array( 'href' => array() ) ) ), wp_login_url( apply_filters( 'the_permalink', get_permalink() ) ) ) . '</div>',
+// 		'logged_in_as'         => '<div class="logged-in-as">' . sprintf( wp_kses( __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="%4$s">Log out?</a>', 'brator' ), array( 'a' => array( 'href' => array() ) ) ), esc_url( admin_url( 'profile.php' ) ), $brator_user_identity, wp_logout_url( apply_filters( 'the_permalink', get_permalink() ) ), esc_attr__( 'Log out of this account', 'brator' ) ) . '</div>',
+// 		'comment_notes_after'  => '',
+// 		'fields'               => apply_filters(
+// 			'comment_form_default_fields',
+// 			array(
+// 				'author' =>
+// 				'<div class="brator-contact-form-field-two-items"><div class="brator-contact-form-field">'
+// 				. '<input id="author"  name="author" type="text" placeholder="' . esc_attr__( 'Name', 'brator' ) . '" value="' . esc_attr( $commenter['comment_author'] ) .
+// 				'" size="30"' . $aria_req . ' /></div>',
+// 				'email'  =>
+// 				'<div class="brator-contact-form-field">'
+// 				. '<input id="email" name="email" type="text" placeholder="' . esc_attr__( 'Your Email *', 'brator' ) . '" value="' . esc_attr( $commenter['comment_author_email'] ) .
+// 				'" size="30"' . $aria_req . ' /></div></div>',
+// 			)
+// 		),
+// 	);
 
-	comment_form( $formargs );
-endif;
+// 	comment_form( $formargs );
+// endif;

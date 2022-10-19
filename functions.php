@@ -135,6 +135,56 @@ function custom_post_type() {
 			'rewrite' => array( 'slug' => 'catalog-categories' ),
 		  ));
 
+		  // Set UI labels for Custom Post Type
+		  $labels = array(
+            'name'                => _x( 'FAQs', 'Post Type General Name', 'aodes' ),
+            'singular_name'       => _x( 'Faq', 'Post Type Singular Name', 'aodes' ),
+            'menu_name'           => __( 'FAQs', 'aodes' ),
+            'parent_item_colon'   => __( 'Parent Faq', 'aodes' ),
+            'all_items'           => __( 'All FAQs', 'aodes' ),
+            'view_item'           => __( 'View Faq', 'aodes' ),
+            'add_new_item'        => __( 'Add New Faq', 'aodes' ),
+            'add_new'             => __( 'Add New', 'aodes' ),
+            'edit_item'           => __( 'Edit Faq', 'aodes' ),
+            'update_item'         => __( 'Update Faq', 'aodes' ),
+            'search_items'        => __( 'Search Faq', 'aodes' ),
+            'not_found'           => __( 'Not Found', 'aodes' ),
+            'not_found_in_trash'  => __( 'Not found in Trash', 'aodes' ),
+        );
+          
+    // Set other options for Custom Post Type
+          
+        $args = array(
+            'label'               => __( 'FAQs', 'aodes' ),
+            'description'         => __( 'Faq', 'aodes' ),
+            'labels'              => $labels,
+            // Features this CPT supports in Post Editor
+            'supports'            => array( 'title' , 'editor'  ),
+            // You can associate this CPT with a taxonomy or custom taxonomy. 
+            'taxonomies'          => array( 'genres' ),
+            /* A hierarchical CPT is like Pages and can have
+            * Parent and child items. A non-hierarchical CPT
+            * is like Posts.
+            */
+            'hierarchical'        => true,
+            'public'              => true,
+            'show_ui'             => true,
+            'show_in_menu'        => true,
+            'show_in_nav_menus'   => true,
+            'show_in_admin_bar'   => true,
+            'menu_position'       => 5,
+            'can_export'          => true,
+            'has_archive'         => true,
+            'exclude_from_search' => false,
+            'publicly_queryable'  => true,
+            'capability_type'     => 'post',
+            'show_in_rest' => true,
+      
+        );
+          
+        // Registering your Custom Post Type
+        register_post_type( 'faqs', $args );
+
       
     }
       

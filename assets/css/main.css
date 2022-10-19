@@ -322,11 +322,90 @@ input[type="search"], input[type="text"], input[type="number"], input[type="emai
 }
 .brator-header-area.header-three.header-one .brator-info-right .brator-cart-link{
     opacity: 0;
+    display: none;
+}
+.brator-header-area.header-three.header-one .brator-info-right .brator-icon-link-text:first-child{
+    margin-right: 10px;
 }
 .brator-header-area.header-one .brator-info-right .header-cart-total{
     float: left;
     color: #fff;
     margin-right: 10px;
+}
+.faqs-archive h1 {
+    margin: 0;
+    line-height: 2;
+    text-align: center;
+}
+.faqs-archive h2 {
+    margin: 0 0 0.5em;
+    font-weight: normal;
+}
+.faqs-archive input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+/* Accordion styles */
+.faqs-archive  .tabs {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+}
+.faqs-archive  .tab {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+   
+}
+.faqs-archive .tab-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: #ed3333;
+    font-weight: bold;
+    cursor: pointer;
+   /* Icon */
+}
+.faqs-archive  .tab-label:hover {
+    background: #ed3333;
+}
+.faqs-archive  .tab-label::after {
+    content: "\276F";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.35s;
+}
+.faqs-archive  .tab-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: #2c3e50;
+    background: white;
+    transition: all 0.35s;
+}
+.faqs-archive .tab-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: #2c3e50;
+    cursor: pointer;
+}
+.faqs-archive  .tab-close:hover {
+    background: #1a252f;
+}
+.faqs-archive  input:checked + .tab-label {
+    background: #ed3333;
+}
+.faqs-archive input:checked + .tab-label::after {
+    transform: rotate(90deg);
+}
+.faqs-archive input:checked ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em;
 }
 .brator-header-area.header-one .brator-info-right .click-item-count{
     float: left;
