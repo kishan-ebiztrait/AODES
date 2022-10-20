@@ -19,24 +19,34 @@ if ( is_active_sidebar( 'sidebar-1' ) ) :
 else :
 	$blog_post_list_class = 'col-xl-12';
 endif;
+$args = array(
+	'post_type' => 'faqs',
+    'posts_per_page'         => -1,
+	'meta_key' => 'showhide',
+	'meta_value' => 1,
+	'meta_compare' => '=='
+);
+$query = new WP_Query( $args); 
 ?>
 <div class="brator-blog-post-area faqs-archive">
 	<div class="container-xxxl container-xxl container">
 		
 				<div class="brator-blog-post">
 					<?php
-					if ( have_posts() ) : ?>
+					if ( $query->have_posts() ) : ?>
                         <div class="row">
                         <?php 
-                            while ( have_posts() ) :
-                                the_post();
+                            while ( $query->have_posts() ) :
+                                $query->the_post();
                                 ?>
                                 
                                 <div class="col-12">
                                  <div class="row">
                                     <div class="col">
                                        <div class="tabs">
+                                        
                                     <?php
+                                
                                     get_template_part( 'template-parts/blog-layout/faq-content' );
                                 ?>
                                        </div>

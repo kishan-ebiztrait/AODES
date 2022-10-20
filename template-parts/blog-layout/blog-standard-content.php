@@ -40,11 +40,11 @@ $view  = ( $count > 1 ? esc_html__( ' Views', 'brator' ) : esc_html__( ' View', 
 						<?php brator_posted_by_auth(); ?>
 					</a>
 					<?php if ( $count > 0 ) { ?>
-					<a class="post-view-count" href="<?php esc_url( the_permalink() ); ?>">
+					<!-- <a class="post-view-count" href="<?php esc_url( the_permalink() ); ?>">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64">
 						<g><path d="M63.6,31C63,30.4,49.3,15,32,15S1,30.4,0.4,31c-0.5,0.6-0.5,1.4,0,2C1,33.6,14.7,49,32,49s31-15.4,31.6-16C64.1,32.4,64.1,31.6,63.6,31z M32,46C18.5,46,6.9,35.3,3.6,32C6.9,28.6,18.5,18,32,18c13.5,0,25.1,10.7,28.4,14C57.1,35.4,45.5,46,32,46z"></path><path d="M32,24.9c-3.9,0-7.1,3.2-7.1,7.1c0,3.9,3.2,7.1,7.1,7.1c3.9,0,7.1-3.2,7.1-7.1C39.1,28.1,35.9,24.9,32,24.9z M32,36.1c-2.3,0-4.1-1.8-4.1-4.1s1.8-4.1,4.1-4.1s4.1,1.8,4.1,4.1S34.3,36.1,32,36.1z"></path></g>
 						</svg><?php echo esc_html( $count . $view ); ?>
-					</a>
+					</a> -->
 					<?php } ?>
 					<!-- <a class="post-comments-count" href="<?php esc_url( the_permalink() ); ?>">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64">
