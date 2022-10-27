@@ -4,6 +4,15 @@ jQuery( document ).ready(function() {
     jQuery(".header-nav").slideToggle();
     
   });
+  jQuery(document).on('change','.woocommerce div.product .brator-product-layout-header-content form.cart .variations td select',function(){
+
+    var s_width = jQuery(this).siblings('.select2-container').css('width');
+
+    jQuery(this).siblings('.select2-container').css('width',s_width);
+    
+  });
+
+  
   
   var temp_title_height = 0;
   jQuery(".brator-product-single-item-mini").find(".brator-product-single-item-title").each(function(){

@@ -41,7 +41,7 @@ $header_search_placeholder = brator_get_options( 'header_search_placeholder' );
 <div class="brator-header-area header-three header-one">
 	<div class="container-lg-c container">
 	<div class="row">
-		<div class="col-lg-12 col-xl-4 col-xxl-3">
+		<div class="col-lg-12 col-xl-3 col-xxl-3">
 		<div class="brator-logo-area">
 			<div class="brator-logo">
 			<?php do_action( 'brator_header_logo' ); ?>
@@ -53,13 +53,9 @@ $header_search_placeholder = brator_get_options( 'header_search_placeholder' );
 			</div>
 		</div>
 		</div>
-		<div class="col-lg-2 xl-dextop-none">
-			<!-- <div class="header-support-info">
-			  <h6><?php echo esc_html( $header_phone_title ); ?></h6><?php echo wp_kses( $header_phone, 'code_contxt' ); ?>
-			</div> -->
-		  </div>
+		
 		<?php if ( $header_search == '1' ) { ?>
-		<div class="col-xxl-4 col-xl-4 lg-dextop-none">
+		<div class="col-xxl-6 col-xl-5 lg-dextop-none">
 		<div class="brator-search-area">
 			<div class="search-form">
 			<input class="search-field" id="prosearch" type="search" placeholder="<?php echo esc_attr( $header_search_placeholder ); ?>"/>

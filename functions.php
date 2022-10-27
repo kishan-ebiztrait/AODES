@@ -683,3 +683,18 @@ function vehicle_init() {
     register_taxonomy('vehicle_accessories', 'vehicle', array('hierarchical' => true, 'label' => 'Accessories', 'query_var' => true, 'rewrite' => array( 'slug' => 'vehicle-accessories' )));
 }
 add_action( 'init', 'vehicle_init' );
+
+add_filter( 'body_class','my_body_classes' );
+function my_body_classes( $classes ) {
+	if(is_user_logged_in()){
+		$classes[] = 'login_customer_in';
+	}else{
+		$classes[] = 'logout_customer_in';
+		
+	}
+	global $post;
+    $post_slug = $post->post_name;
+    $classes[] = $post_slug;
+     
+    return $classes;
+}

@@ -178,7 +178,18 @@ input[type="search"], input[type="text"], input[type="number"], input[type="emai
         margin-bottom: 30px;
         font-size: 42px;
     }
-
+    .brator-product-single-item-area.design-two:hover .brator-product-single-item-mini{
+        margin-top: 0px !important;
+    }
+    .brator-product-single-item-area.design-two .brator-product-single-item-mini .brator-product-single-item-btn{
+        margin-top: 15px !important;
+    }
+    .brator-product-single-item-area .brator-product-single-item-mini{
+        text-align: center;
+    }
+    .brator-product-single-item-area .brator-product-single-item-mini .brator-product-single-item-price p{
+        justify-content: center !important;
+    }
     .login-section .first .form-control ,
     .login-section .last  .form-control {
         padding-left: 0px;
@@ -196,7 +207,7 @@ input[type="search"], input[type="text"], input[type="number"], input[type="emai
   .brator-current-vehicle-area .brator-current-vehicle{
     margin-bottom: 35px;
   }
-  
+ 
   .single-product .woocommerce-custom-single-cart-form .tinv-wishlist{
     display: none;
   }
@@ -306,6 +317,7 @@ input[type="search"], input[type="text"], input[type="number"], input[type="emai
 }
 .brator-header-area.header-one .brator-info-right a.login{
     padding: 10px 15px;
+    margin-left: 20px;
 }
 .brator-cart-item-list .brator-cart-total-money .brator-cart-total-action a{
     font-weight: 400;
@@ -456,6 +468,10 @@ input[type="search"], input[type="text"], input[type="number"], input[type="emai
 .brator-cart-item-list.mini-cart-open {
     background: #0f1423;
     padding: 35px 0px;
+    top: 150px;
+}
+.brator-cart-item-list .brator-cart-item-list-header::after{
+    display: none;
 }
 .brator-cart-item-list{
     border: unset;
@@ -1102,9 +1118,11 @@ text-align: right;
 .product_categories_filter .active{
     color: #ed3333;
 }
-.select2-container{
+
+.product-detail-sidebar .select2-container{
     width: 100% !important;
 }
+
 .product_name .product_name{
     border: 1px solid #cfcbcb !important;
     margin-bottom: 13px;
@@ -1980,12 +1998,18 @@ iframe{
         margin-top: 40px;
     }
 }
-
+@media screen and (max-width:1560px) {
+    .login{
+        font-size: 13px;
+    }
+}
 @media screen and (max-width:1440px) {
     .main-nav li {
         margin-right: 28px;
     }
-
+    .brator-header-area.header-one .brator-info-right a.login{
+        margin-left: 15px;
+    }
     .main-nav li a {
         font-size: 12px;
     }
@@ -2119,7 +2143,9 @@ iframe{
         font-size: 40px;
         margin-bottom: 15px;
     }
-
+    .login_customer_in  .brator-header-area.header-one .brator-info-right a.login{
+        margin-left: 13px;
+    }
     .find-dealer {
         padding-bottom: 90px;
     }
@@ -2292,14 +2318,29 @@ iframe{
         width: 100%;
     }
 }
+@media screen and (max-width:1451px) {
+    .login_customer_in  .brator-header-area.header-one .brator-info-right a.login{
+        margin-left: 13px;
+    }
+}
 @media screen and (max-width:1440px) {
     .woocommerce-shop .brator-inline-product-filter-area {
         margin-top: 25px;
     }
+    
 }
 @media screen and (max-width:1200px) {
     .main-nav li {
         margin-right: 20px;
+    }
+    .brator-cart-item-list.mini-cart-open {
+      
+        top: 229px;
+        left: 23% !important;
+        right: 0px !important;
+    }
+    .login {
+        font-size: 15px;
     }
     .brator-product-header-layout-area .brator-product-header-layout{
         padding: 13px;
@@ -3118,10 +3159,17 @@ iframe{
     max-width: 1520px;
 }
 }
+@media screen and (max-width:800px) {
+.brator-cart-item-list.mini-cart-open {
+    top: 244px;
+    left: 0% !important;
+}
+}
 @media screen and (max-width:767px) {
     .login-section .login_title{
         font-size: 31px;
     }
+  
     .brator-cart-item-list.mini-cart-open .brator-cart-total-money {
        
         margin-bottom: 40px;
@@ -3334,5 +3382,8 @@ iframe{
 }
 .brator-cart-item-list .brator-cart-total-money .brator-cart-total-action a:last-child {
     margin-bottom: 42px;
+}
+.login_customer_in .brator-header-area.header-one .brator-info-right a.login {
+    margin-left: 2px;
 }
 }
