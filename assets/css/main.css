@@ -132,6 +132,9 @@ li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link {
 li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link a{
     color: #fff !important;
 }
+li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link:hover {
+    background: #ed3333 !important;
+}
 .login:hover {
     background-color: transparent;
     color: #5d5d5d;
