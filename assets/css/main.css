@@ -115,7 +115,23 @@ body {
     font-family: 'Montserrat';
 
 }
-
+.woocommerce-MyAccount-navigation-link.is-active{
+    transform:unset !important;
+    background: #ed3333 !important;
+    padding: 5px 15px;
+    border-radius: unset;
+}
+li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link {
+    transform: unset !important;
+    background: #0f1423;
+    padding: 9px 15px;
+    border-radius: unset;
+    width: 200px;
+    /* margin-bottom: 10px; */
+}
+li.woocommerce-MyAccount-navigation-link.woocommerce-MyAccount-navigation-link a{
+    color: #fff !important;
+}
 .login:hover {
     background-color: transparent;
     color: #5d5d5d;
@@ -468,7 +484,7 @@ input[type="search"], input[type="text"], input[type="number"], input[type="emai
 .brator-cart-item-list.mini-cart-open {
     background: #0f1423;
     padding: 35px 0px;
-    top: 150px;
+    top: 119px;
 }
 .brator-cart-item-list .brator-cart-item-list-header::after{
     display: none;
@@ -2335,7 +2351,7 @@ iframe{
     }
     .brator-cart-item-list.mini-cart-open {
       
-        top: 229px;
+        top: 198px;
         left: 23% !important;
         right: 0px !important;
     }
@@ -3161,7 +3177,7 @@ iframe{
 }
 @media screen and (max-width:800px) {
 .brator-cart-item-list.mini-cart-open {
-    top: 244px;
+    top: 198px;
     left: 0% !important;
 }
 }
