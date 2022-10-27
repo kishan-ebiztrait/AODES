@@ -581,6 +581,20 @@ input[type="search"], input[type="text"], input[type="number"], input[type="emai
 .brator-product-img-tab-list.js-tabs#tabs-product-img.design-two .flex-control-thumbs li:last-child{
     margin-right: 0px;
 }
+.woocommerce-page .brator-blog-post-area .content-side{
+    padding: 0px !important;
+}
+.woocommerce-page .brator-blog-post-area .container{
+    max-width: 100% !important;
+    width: 100% !important;
+}
+.logged-in.woocommerce-page .brator-blog-post-area .content-side{
+    padding: 50px 0 !important
+}
+.logged-in.woocommerce-page .brator-blog-post-area .container{
+    max-width: 1520px !important;
+    width: inherit !important;
+}
 .brator-product-single-tab-list .brator-product-single-tab-header ul li a {
     font-size: 19px;
     margin-right: 10px;
