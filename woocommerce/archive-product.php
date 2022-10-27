@@ -45,7 +45,7 @@ do_action( 'woocommerce_before_main_content' );
 #woocommerce_layered_nav-3 , #brator_wc_layered_nav-1 , #brator_wc_layered_nav-2 , #woocommerce_rating_filter-1{
 	display: none;
 }
-.brator-product-single-item-mini .brator-product-single-item-cat , .brator-product-single-item-mini .brator-product-single-item-title, .brator-product-single-item-mini .brator-product-single-item-review ,.brator-product-single-item-mini .brator-product-single-item-price {
+.brator-product-single-item-mini .brator-product-single-item-cat , .brator-product-single-item-mini .brator-product-single-item-review  {
     display: none !important;
 }
 .tinv-wraper.woocommerce.tinv-wishlist.tinvwl-after-add-to-cart.tinvwl-loop-button-wrapper {
